@@ -35,22 +35,22 @@
 </head>
 <body class="bg-light">
     <div class="container py-5">
-        <h1 class="mb-4 text-center">🔎 Job Results</h1>
+        <h1 class="mb-4 text-center"> Job Results</h1>
 
         <div class="mb-4 text-center">
-            <a href="/" class="btn btn-secondary">⬅️ New Search</a>
+            <a href="/" class="btn btn-secondary"> New Search</a>
         </div>
 
         {% if jobs %}
             {% for job in jobs %}
             <div class="job-card">
-                <div class="job-title">🧑‍💼 {{ job.job_title or 'N/A' }} at {{ job.employer_name or 'N/A' }}</div>
+                <div class="job-title"> {{ job.job_title or 'N/A' }} at {{ job.employer_name or 'N/A' }}</div>
                 <div class="job-meta">
-                    📍 {{ job.job_city or 'N/A' }}, {{ job.job_country or 'N/A' }} &nbsp;|&nbsp;
-                    📅 Posted on: {{ job.posted_date }} &nbsp;|&nbsp;
-                    ⌛ Experience required: {{ experience }} years
+                     {{ job.job_city or 'N/A' }}, {{ job.job_country or 'N/A' }} &nbsp;|&nbsp;
+                     Posted on: {{ job.posted_date }} &nbsp;|&nbsp;
+                     Experience required: {{ experience }} years
                 </div>
-                <div class="job-desc">📝 {{ job.short_description or 'No description available.' }}</div>
+                <div class="job-desc"> {{ job.short_description or 'No description available.' }}</div>
                 <a href="{{ job.job_apply_link }}" target="_blank" class="btn btn-primary apply-btn">Apply Now</a>
             </div>
             {% endfor %}

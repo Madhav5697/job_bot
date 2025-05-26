@@ -8,7 +8,7 @@
 </head>
 <body class="bg-light">
     <div class="container py-5">
-        <h1 class="mb-4 text-center">🔍 JobBot</h1>
+        <h1 class="mb-4 text-center"> JobBot</h1>
 
         {% if error %}
         <div class="alert alert-danger">{{ error }}</div>
@@ -16,17 +16,17 @@
 
         <form method="POST" action="/results" class="mx-auto" style="max-width: 500px;">
             <div class="mb-3">
-                <label for="location" class="form-label">🌍 Location</label>
+                <label for="location" class="form-label"> Location</label>
                 <input type="text" class="form-control" id="location" name="location" placeholder="e.g. India" required />
             </div>
 
             <div class="mb-3">
-                <label for="experience" class="form-label">⌛ Years of Experience</label>
+                <label for="experience" class="form-label"> Years of Experience</label>
                 <input type="number" class="form-control" id="experience" name="experience" placeholder="e.g. 3" min="0" required />
             </div>
 
             <div class="mb-3">
-                <label for="skills" class="form-label">💡 Skills / Job Type</label>
+                <label for="skills" class="form-label"> Skills / Job Type</label>
                 <input type="text" class="form-control" id="skills" name="skills" placeholder="e.g. Python Developer" required />
             </div>
 
